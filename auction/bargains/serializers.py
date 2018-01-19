@@ -13,4 +13,5 @@ class BargainTypeSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = BargainType
-        fields = ('url', 'id', 'name')
+        fields = ('url', 'id', 'name', 'created_by', 'updated_by')
+        depth = 2

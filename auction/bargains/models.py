@@ -1,6 +1,7 @@
 from django.db import models
 from auction.common.models import AuctionBaseModel
 from auction.categories.models import Category
+from django.conf import settings
 
 class BargainType(AuctionBaseModel):
     name = models.TextField()
